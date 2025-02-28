@@ -194,12 +194,14 @@ textBtn.addEventListener('click', () => {
         width: 200,
         fontSize: 24,
         fontFamily: 'Arial',
-        fill: 'black',
+        fill: currentColor,
         textAlign: 'center',
         editable: true,
     });
 
     canvas.add(textbox);
+    canvas.renderAll();
+    save();
 })
 
 
